@@ -1,3 +1,5 @@
+// petlja - IF izjava samo sa WHILE
+
 #include <iostream>
 
 void main()
@@ -10,3 +12,12 @@ void main()
 		std::cout << mnm << std::endl;
 	}
 }
+
+
+// 
+5
+4
+3
+2
+1
+0
