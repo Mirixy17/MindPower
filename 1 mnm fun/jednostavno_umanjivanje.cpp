@@ -13,3 +13,7 @@ void main()
 
 	std::cout << mnm;
 }
+
+
+// alternativa mnm --;
+// alternativa 2 mnm -= 1;
