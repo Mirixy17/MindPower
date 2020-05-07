@@ -25,3 +25,5 @@ void main()
 		prvi_broj = treci_broj;
 	}
 }
+
+// endl dio std::endl umjesto cout, alternativa '\n'
