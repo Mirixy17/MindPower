@@ -1,6 +1,7 @@
 #include <iostream>
 
-//Funkcija - stoVraca ImeFunkcije stoPrima
+//Funkcija - stoVraca ImeFunkcije stoPrima(argumenti)
+//https://www.tutorialspoint.com/cplusplus/cpp_functions.htm
 int FibBroj(int prvi, int drugi)
 {
 	int zbroj = prvi + drugi;
@@ -26,4 +27,4 @@ void main()
 	}
 }
 
-// endl dio std::endl umjesto cout, alternativa '\n'
+// endl dio std(standard library), alternativa '\n'
