@@ -3,17 +3,12 @@
 #include <iostream>
 
 int main()
-
 {
-
-int knoppers;
-knoppers = 5;
-
-if (knoppers > 2)
-
-{
-
-std::cout<< knoppers;
-
-}
+	int knoppers;
+	knoppers = 5;
+	
+	if (knoppers > 2)
+	{
+		std::cout<< knoppers;
+	}
 }
