@@ -17,3 +17,4 @@ void main()
 
 // alternativa mnm --;
 // alternativa 2 mnm -= 1;
+// https://en.cppreference.com/w/cpp/language/operator_incdec
