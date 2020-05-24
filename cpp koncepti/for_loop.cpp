@@ -1,16 +1,16 @@
 #include <iostream>
 
-int main ()
+int main()
 {
-	for (int broj = 0; broj <= 42; broj ++)
-	{
-		if (broj == 42)
-		{ 
-			std::cout << broj << "is the meaning of life\n";
-		}
-		else
-		{
-			std::cout <<broj << "is not the meaning of life\n";
-		}
-	}
+    //int broj = 0;
+    //while (broj <= 10)
+    //{
+    //    std::cout << broj << "\n";
+    //    broj++;
+    //}
+
+    for (int broj = 0; broj < 10; broj++)
+    {
+        std::cout << broj << "\n";
+    }
 }
