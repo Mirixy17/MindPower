@@ -2,7 +2,6 @@
 
 int main()
 {
-
     int broj = 0;
     while (broj <= 10)
     {
