@@ -1,0 +1,12 @@
+#include <iostream>
+#include <string>
+
+int main()
+
+	{
+	for (int broj = 0; broj < 9; broj++)
+	{
+		std::cout << "P\nr\no\ng\nr\na\nm\ni\nr\na\nn\nj\ne\n\nj\ne\n\nz\na\nb\na\nv\nn\no\n\n";
+	}
+	}
+
