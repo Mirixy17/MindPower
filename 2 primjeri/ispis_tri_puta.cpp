@@ -15,5 +15,5 @@ int main()
 	std::cout << broj;
 
 
-	//uvecaj varijablu za jedan i ispisi njezinu vijednost, ponovi 3 puta
+	//uvecaj varijablu za jedan i ispisi njezinu vijednost, ponovi 3 puta, ispisuje 234
 }
