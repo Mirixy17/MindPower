@@ -9,7 +9,7 @@ int main ()
 
 	if (brasno == 200 && jaja == 2 && secer == 60 && miriam == 1)
 	{
-		std::cout << "mamo palacinke"
+		std::cout << "imamo palacinke"
 	}
 	else
 	{
