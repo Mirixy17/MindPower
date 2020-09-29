@@ -9,3 +9,6 @@ Ti nadodaj na tu klasu da moze ispisati podatke u ovome formatu
 > prviBroj prviOperator drugiBroj drugiOperator treciBroj
 
 ps: umjesto tri varijable intigera, mozes koristiti vektor intigera, wink wink
+
+
+https://stackedit.io/app#
