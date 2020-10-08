@@ -1,0 +1,33 @@
+if(true)
+	std::cout << "fizzbuzz" << std::endl;
+else
+{
+	std::cout << "buzz" << std::endl;
+	std::cout << "fizz" << std::endl;
+}
+
+/* ako nema zagrade ispise samo prvi, uvijek stavljati zagrade ovako*/
+
+#include <iostream>
+void main()
+
+{
+	int broj = ;
+
+	if (broj % 5 == 0 && broj % 3 == 0)
+	{
+		std::cout << "fizzbuzz" << std::endl;
+	}
+	else if (broj % 5 == 0)
+	{
+		std::cout << "buzz" << std::endl;
+	}
+	else if (broj % 3 == 0)
+	{
+		std::cout << "fizz" << std::endl;
+	}
+	else
+	{
+		std::cout << broj << std::endl;
+	}
+}
