@@ -1,0 +1,35 @@
+#pragma once
+#include <iostream>
+#include <string>
+
+void Ispis(int broj) 
+{
+	std::cout << broj << '\n';
+}
+
+void Ispis(std::string rijec)
+{
+	std::cout << rijec << '\n';
+}
+
+
+void FizzBuzz(int broj)
+
+{
+	if (broj % 5 == 0 && broj % 3 == 0)
+	{
+		Ispis("fizzbuzz");
+	}
+	else if (broj % 5 == 0)
+	{
+		Ispis("buzz");
+	}
+	else if (broj % 3 == 0)
+	{
+		Ispis("fizz");
+	}
+	else
+	{
+		Ispis(broj);
+	}
+}
