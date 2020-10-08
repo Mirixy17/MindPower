@@ -1,0 +1,38 @@
+#pragma once
+#include <iostream>
+#include <string>
+
+void Ispis(int broj) 
+{
+	std::cout << broj << '\n';
+}
+
+void Ispis(std::string rijec)
+{
+	std::cout << rijec << '\n';
+}
+
+bool Djeljiv(int broj, int modulator)
+{
+	return broj % modulator == 0;
+}
+
+void FizzBuzz(int broj)
+{
+	if (Djeljiv(broj,5) && Djeljiv(broj,3))
+	{
+		Ispis("fizzbuzz");
+	}
+	else if (Djeljiv(broj,5))
+	{
+		Ispis("buzz");
+	}
+	else if (Djeljiv(broj,3))
+	{
+		Ispis("fizz");
+	}
+	else
+	{
+		Ispis(broj);
+	}
+}
