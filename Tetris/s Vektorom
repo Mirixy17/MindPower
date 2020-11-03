@@ -1,0 +1,77 @@
+#include <iostream>
+#include <Windows.h>
+#include <chrono>
+#include <thread>
+#include <vector>
+
+const int broj_stupaca = 4;
+const int broj_redova = 4;
+
+void IspisiTetris(std::vector<std::vector<char>> Tetris)
+{
+    for (int stupac = 0; stupac < broj_stupaca; stupac++)
+    {
+        for (int red = 0; red < broj_redova; red++)
+        {
+            std::cout << Tetris[stupac][red];
+        }
+        std::cout << '\n';
+    }
+}
+
+void PauzaIOcistiEkran()
+{
+    std::chrono::seconds dura(1);
+    std::this_thread::sleep_for(dura);
+    system("cls");
+}
+
+int main()
+{
+    std::vector<std::vector<char>> tetris;
+
+    tetris.resize(broj_stupaca);
+    for (int stupac = 0; stupac < broj_stupaca; stupac++)
+    {
+        tetris[stupac].resize(broj_redova);
+    }
+    
+    for (int stupac = 0; stupac < broj_stupaca; stupac++)
+    {
+        for (int red = 0; red < broj_redova; red++)
+        {
+            tetris[stupac][red] = ' ';
+        }
+    }
+
+    tetris[0][0] = '*';
+    tetris[1][0] = '*';
+    tetris[1][1] = '*';
+    tetris[2][2] = '*';
+
+    while (true)
+    {
+        IspisiTetris(tetris);
+        PauzaIOcistiEkran();
+
+        for (int stupac = broj_stupaca - 2; stupac >= 0; stupac--)
+        {
+            for (int red = broj_redova-1; red >= 0; red--)
+            {
+                if (tetris[stupac][red] == '*')
+                {
+                    if (tetris[stupac + 1][red] == ' ')
+                    {
+                        tetris[stupac][red] = ' ';
+                        tetris[stupac + 1][red] = '*';
+                    }
+                    else if(red <= broj_redova - 2)
+                    {
+                        tetris[stupac][red] = ' ';
+                        tetris[stupac][red+1] = '*';
+                    }
+                }
+            }
+        }
+    }
+}
