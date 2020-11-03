@@ -1,0 +1,41 @@
+
+
+void Brisanje()
+
+{
+std::chrono::seconds dura(1);
+std::this_thread::sleep_for(dura);
+system("cls");
+}
+
+int main()
+{
+const std::string granica = "***********";
+const std::string praznina = " *";
+
+std::string polje;
+
+polje.append(granica);
+
+polje.append("\n");
+
+polje.append(praznina);
+
+polje.append("\n");
+
+polje.append(praznina);
+
+polje.append("\n");
+
+polje.append(praznina);
+
+polje.append("\n");
+
+polje.append(praznina);
+
+polje.append("\n");
+
+polje.append(granica);
+
+std::cout << polje;
+}
