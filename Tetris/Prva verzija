@@ -1,0 +1,39 @@
+#include <iostream>
+#include <Windows.h>
+#include <chrono>
+#include <thread>
+
+void Ciscenje()
+{
+    std::chrono::seconds dura(1);
+    std::this_thread::sleep_for(dura);
+    system("cls");
+}
+
+void Igraliste(std::string rijec)
+{
+    std::cout << rijec << "\n";
+}
+
+int main()
+{
+    Ciscenje();
+
+    Igraliste("************\n*    *     *\n*          *\n*          *\n*          *\n*          *\n************");
+
+    Ciscenje();
+
+    Igraliste("************\n*          *\n*    *     *\n*          *\n*          *\n*          *\n************");
+
+    Ciscenje();
+
+    Igraliste("************\n*          *\n*          *\n*    *     *\n*          *\n*          *\n************");
+
+    Ciscenje();
+
+    Igraliste("************\n*          *\n*          *\n*          *\n*    *     *\n*          *\n************");
+
+    Ciscenje();
+
+    Igraliste("************\n*          *\n*          *\n*          *\n*          *\n*    *     *\n************");
+}
