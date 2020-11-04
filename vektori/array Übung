@@ -22,3 +22,15 @@ void main()
 }
 
 //ISPISUJE svakog drugog clana
+
+
+void main()
+{
+	float x[] = {10.5, 11.5, 12.5, 13.5, 14.5};
+	float a = x[3];
+	std::cout << a;
+
+}
+
+
+ISPISUJE vrijednost x na trecoj poziciji, ispisuje 13.5
