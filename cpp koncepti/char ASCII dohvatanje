@@ -1,0 +1,8 @@
+#include <iostream>
+
+void main()
+{
+	std::cout << static_cast<char>(64);
+}
+
+//izbaci @
