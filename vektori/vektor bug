@@ -1,0 +1,15 @@
+#include <iostream>
+
+void main()
+{
+	char tetris[] = { '*', '*', '*' };
+	int pozicijaUArrayu = 0;
+	while (true)
+	{
+		std::cout << tetris[pozicijaUArrayu];
+		pozicijaUArrayu++;
+	}
+
+	std::cout << tetris[0] << '\n' << tetris[1] << '\n' << tetris[2] << '\n' << tetris[3];
+  
+  //Izbaci smece
