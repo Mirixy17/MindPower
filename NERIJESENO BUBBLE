@@ -1,0 +1,81 @@
+#include <fstream>
+#include <iostream>
+
+int main()
+{
+	const int nmax = 100;
+	float x[nmax];
+	std::ifstream ulazniTok("brojevi.dat");
+	if (!ulazniTok)
+
+	{
+		std::cerr << "Ne mogu otvoriti trazenu datoteku" << std::endl;
+		return 1;
+	}
+	int n = -1;
+	while (!ulazniTok.eof())
+	{
+		if (n >= nmax)
+		{
+			std::cerr << "Previse podataka!" << std::endl;
+			return 2;
+		}
+			ulazniTok >> x[++n];
+	}
+	if (n < 0)
+	{
+		std::cerr << "Nema podataka" << std::endl;
+		return 3;
+	}
+	for (int i = n - 1; i > 0; i++)
+	{
+		bool zamjena = false;
+		for (int j = 0; j < i; j++)
+		{
+			if (x[j + 1] < x[j])
+			{
+				float priv = x[j];
+				x[j] = x[j + 1];
+				x[j + 1] = priv;
+				zamjena = true;
+			}
+		}
+		if (zamjena == false)
+			break;
+	}
+	std::cout << "Brojevi slozeni po velicini:" << std::endl;
+	for (int i = 0; i < n; i++)
+		std::cout << x[i] << std::endl;
+	return 0;
+}
+
+
+//#include <fstream>
+//#include <iostream>
+//
+//int main()
+//{
+//	const int nmax = 100;
+//	const int n = 6;
+//	float x[n] = { 5,6,7,49,1,3 };
+//	for (int i = n - 1; i > 0; i++)
+//	{
+//		bool zamjena = false;
+//		for (int j = 0; j < i; j++)
+//		{
+//			if (x[j + 1] < x[j])
+//			{
+//				float priv = x[j];
+//				x[j] = x[j + 1];
+//				x[j + 1] = priv;
+//				zamjena = true;
+//			}
+//		}
+//		if (zamjena == false)
+//			break;
+//	}
+//	std::cout << "Brojevi slozeni po velicini:" << std::endl;
+//	for (int i = 0; i < n; i++)
+//		std::cout << x[i] << std::endl;
+//	return 0;
+//}
