@@ -1,0 +1,27 @@
+#include <iostream>
+
+int main()
+
+{
+	std::cout << "Upisi koeficijente pravca:" << std::endl;
+	float a, b, c;
+	std::cout <<"a = ";
+	std::cin >> a;
+	std::cout << "b = ";
+	std::cin >> b;
+	std::cout << "c = ";
+	std::cin >> c;
+	std::cout << "Koeficijenti: " << a << "," << b << "," << c << std::endl;
+	std::cout << "Presjeciste s apcisom:";
+	if (a != 0)
+		std::cout << -c / a << ", ";
+	else
+		std::cout << "Nema, ";
+	std::cout << "Presjeciste s ordinatom: ";
+	if (b != 0)
+		std::cout << -c / b << std::endl;
+	else
+		std::cout << "Nema" << std::endl;
+
+	return 0;
+}
