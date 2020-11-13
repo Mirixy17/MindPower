@@ -1,1 +1,32 @@
+for (pocetni_izraz; uvjet_izvodjenja; izraz_prirasta) 
+// blok naredbi
 
+1. izracunava se pocetni izraz. Najcesce je to pridruzivanje pocetne vrijednosti brojacu kojim ce se kontrolirati ponavljanje petlje
+2. izracunava se uvjet izvodjenja, izraz ciji rezultat mora biti tipa bool, ako je jednak logicnoj neistini, preskace se blok naredbi i program se nastavlja prvom naredbnom iz bloka
+3. ako je uvjet izvodjenja jednak logicnoj istini, izvodi se blok naredbi
+4. na kraju se izracunava izraz prirasta, npr. povecavanje broja petlje, program se vraca na pocetak petlje te se ona ponavlja od tocke 2.
+program se ponavlja sve dok uvjet izvodjenja na pocetku petlje daje logicnu istinu, kada postane nelogicna prekida se
+
+
+
+
+#include <iostream>
+
+
+int main()
+
+{
+int n;
+std::cout << "Upisiprirodnibroj";
+std::cin >> n;
+
+long int fjel = 1;
+
+for (int i = 2; i <= n; i++)
+
+fjel *= i;
+std::cout << n << "! =" << fjel << std::endl;
+
+return 0;
+
+}
