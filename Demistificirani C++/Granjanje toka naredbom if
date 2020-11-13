@@ -28,31 +28,33 @@ int main()
 
 
 #include <iostream>
+using namespace std;
 
 int main()
 
 {
 	float a, b, c;
-	std::cout << "Unesi koeficijente kvadratne jednadzbe:" << std::endl;
-	std::cout << "a = ";
+	cout << "Unesi koeficijente kvadratne jednadzbe:" << endl;
+	cout << "a = ";
 	cin >> a;
-	std::cout << "b = ":
+	cout << "b = ";
 	cin >> b;
-	std::cout << "b = ";
+	cout << "c = ";
 	cin >> c;
-	std::cout << "c = ";
+	
 	if (a)
 	{
 		float diskr = b * b - 4. * a * c;
-		std::cout << "Jednadzba ima ";
+		cout << "Jednadzba ima ";
 		if (diskr == 0)
-			std::cout << "dvostruki realni korijen." << std::endl;
+			cout << "dvostruki realni korijen." << endl;
 		else if (diskr > 0)
-			std::cout <<"dva realna korijena" << std::endl;
-		else 
-			std::cout << "kompleks" << std::endl;
-
+			cout << "dva realna korijena" << endl;
+		else
+			cout << "kompleksne korijene" << endl;
 	}
-}
-
-to be continued
+	else
+		cout << "Jednadzba je linearna." << endl;
+	return 0;
+	}
+	
