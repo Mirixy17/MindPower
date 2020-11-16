@@ -1,0 +1,14 @@
+#include <iostream>
+using Int = int;
+
+void main()
+{
+	//Int broj = 0.9;
+	float fbroj = -0.004;
+
+	//std::cout << "int: " << broj;
+	std::cout << "float: " << fbroj;
+	std::cout << "float u bool: " << (bool)fbroj;
+
+}
+
