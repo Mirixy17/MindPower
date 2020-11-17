@@ -1,0 +1,13 @@
+#include <iostream> 
+
+void main()
+{
+    char sample[] = "GeeksforGeeksforGeeksforGeeks";
+    for (int mjestouarrayu = 0; mjestouarrayu < sizeof(sample) / sizeof(char) ; mjestouarrayu++)
+    {
+        std::cout << sample[mjestouarrayu];
+    }
+}
+
+Ovdje sizeof otkriva koliko je elemenata u arrayu sample tako da podijeli zbroj bajtova od svakog elementa sa zbrojem bajtova od jednog elementa, 
+"GeeksforGeeksforGeeksforGeeks" = 0 - 29 elemenata, 1 char element ima 4 bajta, dakle 30 x 4 bajta = 120 bajta, 120 / 4 = 30 
