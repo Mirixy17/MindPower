@@ -1,0 +1,9 @@
+STRING ARRAY BRISANJE ???
+#include <iostream>    
+#include <string>
+
+	int main() 
+	{
+		std::string hoteli[3] = {"Moguntia", "Advena", "Königshof", "The Niu Mood"};
+		std::cout << hoteli.resize(hoteli->size() - 1);
+	}
