@@ -1,0 +1,8 @@
+#include <iostream>    
+#include <string>
+
+	int main() 
+	{
+		std::string hoteli[] = {"Moguntia", 'Advena", "Königshof"};
+		std::cout << hoteli[1];
+	}
