@@ -7,3 +7,6 @@ STRING ARRAY BRISANJE ???
 		std::string hoteli[3] = {"Moguntia", "Advena", "Königshof", "The Niu Mood"};
 		std::cout << hoteli.resize(hoteli->size() - 1);
 	}
+
+
+https://www.techiedelight.com/remove-last-character-end-string-cpp/
