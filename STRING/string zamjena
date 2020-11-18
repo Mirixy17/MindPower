@@ -1,0 +1,12 @@
+#include <iostream>    
+#include <string>
+
+	int main() 
+	{
+		std::string hoteli[4] = {"Moguntia", "Advena", "Königshof", "The Niu Mood"};
+		hoteli[3] = "Schottenhof";
+		std::cout << hoteli[0];
+		std::cout << hoteli[1];
+		std::cout << hoteli[2];
+		std::cout << hoteli[3];
+	}
