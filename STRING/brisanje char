@@ -1,0 +1,30 @@
+/#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string myLukic = "MeinLieber";
+	myLukic[0] = 'D';
+	std::cout << myLukic;
+}
+
+//#include <iostream>
+//#include <string>
+//
+//void main()
+//{
+//	std::string myLukic = "MeinLieber";
+//	myLukic.resize(myLukic.size() + 1);
+//
+//	for (int i = myLukic.size() - 1; i >= 3; i--)
+//	{
+//		myLukic[i + 1] = myLukic[i];
+//	}
+//	myLukic[4] = 'e';
+//	myLukic.resize(myLukic.size() - 1);
+//	std::cout << myLukic;
+//
+//
+//	//myLukic.append(myLukic[5]) =  'e'; //dodati na 5. mjesto
+//	//myLukic[11] ='_'; //izbrisati r
+//	//std::cout << myLukic;
