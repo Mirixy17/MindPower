@@ -1,0 +1,6 @@
+int main()
+
+{
+	std::string text = "Lukic";
+	std::cout << text.length();
+}
