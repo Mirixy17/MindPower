@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string myLukic = "MeinLieber";
+	myLukic[0] = 'D';
+	std::cout << myLukic;
+}
