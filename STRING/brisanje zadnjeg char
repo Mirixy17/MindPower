@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string myLukic = "MeinLiebere";
+	myLukic.resize(myLukic.size() - 1);
+	std::cout << myLukic;
+}
