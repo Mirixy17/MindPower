@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string myLukic = "MeinLiebe";
+	myLukic.append("r");
+	std::cout << myLukic;
+}
