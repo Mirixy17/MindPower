@@ -1,3 +1,20 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string MyLukic = "MeinLiebe";
+	MyLukic.resize(MyLukic.size()+1);
+
+	for (int ElementuRijeci = (MyLukic.size() - 1); ElementuRijeci >= 4; ElementuRijeci--)
+	{
+		std::cout << MyLukic[ElementuRijeci + 1] << MyLukic[ElementuRijeci];
+	}
+	MyLukic[4] = 'e';
+	std::cout << MyLukic;
+}
+
+
 //	myLukic.resize(myLukic.size() + 1);
 //
 //	for(int i = myLukic.size()-1; i >= 3; i--)
