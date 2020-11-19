@@ -7,3 +7,6 @@ int main()
 	myLukic.append("r");
 	std::cout << myLukic;
 }
+
+
+navodnici "" ne '', dodati se moze vise znakova, npr. myLukic.append("r-MyLove");
