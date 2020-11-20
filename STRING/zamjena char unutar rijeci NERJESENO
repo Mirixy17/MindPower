@@ -6,28 +6,11 @@ int main()
 	std::string MyLukic = "MeinLiebe";
 	MyLukic.resize(MyLukic.size()+1);
 
-	for (int ElementuRijeci = (MyLukic.size() - 1); ElementuRijeci >= 4; ElementuRijeci--)
+	for (int slovo = MyLukic.size()-1; slovo >= 3; slovo--)
 	{
-		std::cout << MyLukic[ElementuRijeci + 1] << MyLukic[ElementuRijeci];
+		MyLukic[slovo + 1] = MyLukic[slovo];
 	}
 	MyLukic[4] = 'e';
 	std::cout << MyLukic;
 }
-
-
-//	myLukic.resize(myLukic.size() + 1);
-//
-//	for(int i = myLukic.size()-1; i >= 3; i--)
-//	{
-//		myLukic[i + 1] = myLukic[i];
-//	}
-//	myLukic[4] = 'e';
-//	myLukic.resize(myLukic.size() - 1);
-//	std::cout << myLukic;
-//
-//
-//	// =  'e'; //dodati na 5. mjesto
-//	//myLukic[11] ='_'; //izbrisati r
-//	//std::cout << myLukic;
-//}
 
