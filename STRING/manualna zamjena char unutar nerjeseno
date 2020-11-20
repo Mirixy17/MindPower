@@ -1,0 +1,12 @@
+int main()
+{
+	int a = 3;
+	std::string MyLukic = "MeinLiebe";
+	MyLukic.resize(MyLukic.size()+1);
+
+	MyLukic[5] = MyLukic[4];
+	MyLukic[6] = MyLukic[5];
+	MyLukic[7] = MyLukic[6];
+	MyLukic[8] = MyLukic[7];
+	std::cout << MyLukic;
+}
