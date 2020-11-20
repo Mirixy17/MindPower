@@ -1,1 +1,7 @@
-
+int main()
+{
+	std::string str = "MeinLiebe";
+	std::string str2 = "e ";
+	str.insert(4, str2);
+	std::cout << str;
+}
