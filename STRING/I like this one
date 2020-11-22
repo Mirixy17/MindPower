@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+std::string Insertaj(char znak, int pozicija, std::string MyLukic)
+{
+	MyLukic.resize(MyLukic.size() + 1);
+
+	pozicija = MyLukic.size() - pozicija;
+	for (int i = 1; i <= pozicija-1; i++)
+	{
+		int j = MyLukic.size() - i;
+		MyLukic[j] = MyLukic[j - 1];
+	}
+	MyLukic[MyLukic.size() - pozicija] = znak;
+	return(MyLukic);
+}
+
+void main()
+{
+	std::string MyLukic = Insertaj('i', 5, "Luka  Miriam");
+	std::cout << MyLukic;
+}
