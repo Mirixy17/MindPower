@@ -1,0 +1,34 @@
+#include <iostream>
+#include <string>
+
+class MiriamTip
+{
+public:
+	MiriamTip(std::string Text) : m_Text(Text) {};
+	std::string Insertaj(char znak, int pozicija)
+	{
+		m_Text.resize(m_Text.size() + 1);
+
+		pozicija = m_Text.size() - pozicija;
+		for (int i = 1; i <= pozicija - 1; i++)
+		{
+			int j = m_Text.size() - i;
+			m_Text[j] = m_Text[j - 1];
+		}
+		m_Text[m_Text.size() - pozicija] = znak;
+		return(m_Text);
+	}
+	void Ispis()
+	{
+		std::cout << m_Text << '\n';
+	}
+private:
+	std::string m_Text;
+};
+
+void main()
+{
+	MiriamTip lukic("Luka  Miriam");
+	lukic.Insertaj('i', 5);
+	lukic.Ispis();
+}
