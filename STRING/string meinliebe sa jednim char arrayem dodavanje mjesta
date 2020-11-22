@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+
+void main()
+{
+	std::string MyLukic = "MeinLiebe";
+	MyLukic.resize(MyLukic.size() + 1);
+	MyLukic[MyLukic.size() - 1] = MyLukic[MyLukic.size() - 2];
+	MyLukic[MyLukic.size() - 2] = MyLukic[MyLukic.size() - 3];
+	MyLukic[MyLukic.size() - 3] = MyLukic[MyLukic.size() - 4];
+	MyLukic[MyLukic.size() - 4] = MyLukic[MyLukic.size() - 5];
+	MyLukic[MyLukic.size() - 5] = MyLukic[MyLukic.size() - 6];
+	MyLukic[MyLukic.size() - 6] = 'e';
+	
+
+	std::cout << MyLukic;
+}
