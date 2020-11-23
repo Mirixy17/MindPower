@@ -14,3 +14,22 @@ int main()
 	std::cout << MyLukic;
 }
 
+
+
+
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string MyLukic = "MeinLiebe";
+	MyLukic.resize(MyLukic.size() + 1);
+	
+	for(int slovo = 9; slovo >= 4; slovo--)
+	{
+		MyLukic[slovo] = MyLukic[slovo - 1];
+	}
+	MyLukic[4] = 'e';
+	std::cout << MyLukic;
+}
