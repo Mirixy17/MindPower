@@ -1,0 +1,29 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string MyLukic = "MeinLiebe";
+	MyLukic.resize(MyLukic.size() + 1);
+
+	MyLukic[9] = MyLukic[8];
+	MyLukic[8] = MyLukic[7];
+	MyLukic[7] = MyLukic[6];
+	MyLukic[6] = MyLukic[5];
+	MyLukic[5] = MyLukic[4];
+	MyLukic[4] = 'e';
+	std::cout << MyLukic;
+
+}
+
+kompajler uzme prethodnu verziju MyLukic i nju zamijeni, ne prvotnu, npr.
+
+	MyLukic[9] = MyLukic[8]; - MeinLiebee
+	MyLukic[8] = MyLukic[7]; - MeinLiebbe
+	MyLukic[7] = MyLukic[6]; - MeinLieebe
+	MyLukic[6] = MyLukic[5]; - MeinLiiebe
+	MyLukic[5] = MyLukic[4]; - MeinLLiebe
+	MyLukic[4] = 'e'; - MeineLiebe
+
+
+
