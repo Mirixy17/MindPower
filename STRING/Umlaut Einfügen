@@ -1,0 +1,9 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string Kuss = "Miriam küsst Luka";
+	Kuss[8] = static_cast<char>(129);
+	std::cout << Kuss;
+}
