@@ -1,0 +1,32 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+    for (int broj = 1; broj < 100; broj++)
+    {
+        bool djeljivsa3 = broj % 3 == 0;
+        if (djeljivsa3)
+        {
+            std::cout << "Fizz" <<"\n";
+        }
+
+        bool djeljivsa5 = broj % 5 == 0;
+        if (djeljivsa5)
+        {
+            std::cout << "Buzz" << "\n";
+        }
+        bool djeljivsa3i5 = broj % 3 == 0 && broj % 5 == 0;
+        if (djeljivsa3i5)
+
+        {
+            std::cout << "FizzBuzz" << "\n";
+        }
+        bool nijedjeljivs3i5 = broj % 5 != 0 && broj % 3 != 0;
+
+        if (nijedjeljivs3i5)
+        {
+            std::cout << broj << "\n";
+        }
+    }
+}
