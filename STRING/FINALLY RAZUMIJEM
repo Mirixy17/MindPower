@@ -1,0 +1,19 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string MyLukic = "MeinLiebe";
+	MyLukic.resize(MyLukic.size() + 3);
+	
+
+	for (int L = MyLukic.size() - 1; L > 4; L--)
+	{
+		
+		MyLukic[L] = MyLukic[L-2];
+
+	}
+	MyLukic[4] = 'e';
+	MyLukic[5] = ' ';
+	std::cout << MyLukic;
+}
