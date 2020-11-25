@@ -1,0 +1,27 @@
+#include <iostream>
+#include <string>
+
+int main()
+
+{
+	for (int broj = 1; broj < 100; broj++)
+	{
+		if (broj % 5 == 0 && broj % 3 == 0)
+		{
+		std::cout << "FizzBuzz" << '\n';
+		}
+		else if (broj % 3 == 0)
+		{
+			std::cout << "Fizz" << '\n';
+		}
+		else if (broj % 5 == 0)
+		{ 
+			std::cout << "Buzz" << '\n';
+		}
+		else 
+		{
+			std::cout << broj << '\n';
+		}
+	}
+
+}
