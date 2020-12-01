@@ -1,0 +1,22 @@
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string Ljubav = "Mein Lukic";
+
+	for (int i = 0; i < Ljubav.size(); i++)
+	{
+		for (int j = 0; j < Ljubav.size(); j++)
+		{
+			if (Ljubav[j] > Ljubav[j + 1])
+			{ 
+				char temp = Ljubav[j];
+				Ljubav[j] = Ljubav[j + 1];
+				Ljubav[j + 1] = temp;
+			}
+			std::cout << Ljubav<<"\n";
+		}
+	}
+}
+//velika slova su ispred malih
