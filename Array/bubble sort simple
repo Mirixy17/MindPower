@@ -19,4 +19,4 @@ int main()
 		}
 	}
 }
-//velika slova su ispred malih
+//velika slova su ispred malih, ako je std::cout << Ljubav<<"\n";  ipred zadnje zagrade ispise samo konacnu verziju, tu gdje je ispise cijeli proces svrstavanja
