@@ -1,0 +1,56 @@
+const int g_FizzBuzz = 11;
+const int g_Fizz = 12;
+const int g_Buzz = 13;
+
+int g_Broj = 0;
+
+void setup()
+{
+  pinMode(g_Fizz, OUTPUT);
+  pinMode (g_Buzz, OUTPUT);
+  pinMode (g_FizzBuzz, OUTPUT);
+  Serial.begin (9600);
+}
+void Fizz()
+{
+  digitalWrite(g_Fizz, HIGH);
+  delay (1000);
+  digitalWrite (g_Fizz, LOW);
+}
+
+void Buzz()
+{
+  digitalWrite (g_Buzz, HIGH);
+  delay (1000);
+  digitalWrite (g_Buzz, LOW);
+}
+
+ void FizzBuzz()
+{
+    digitalWrite (g_FizzBuzz, HIGH);
+    delay (1000);
+    digitalWrite (g_FizzBuzz, LOW);
+
+}
+
+void loop()
+{
+  Serial.println(g_Broj);
+  if (g_Broj % 3 == 0 && g_Broj % 5 == 0)
+  {
+    FizzBuzz();
+  }
+  else if (g_Broj % 3 == 0)
+  {
+    Fizz();
+  }
+  else if (g_Broj % 5 == 0)
+  {
+    Buzz();
+  }
+  else
+  {
+    delay (1000);
+  }
+  g_Broj++;
+}
