@@ -5,3 +5,19 @@ int main()
 	str.insert(4, str2);
 	std::cout << str;
 }
+
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string MyLukic = "MeinLiebe";
+	std::string MyLukic4 = "e";
+	MyLukic.insert(4, MyLukic4);
+	std::string MyLukic5 = " ";
+	MyLukic.insert(5, MyLukic5);
+	std::cout << MyLukic;
+}
+
+// sam dodaje mjesto i umece dodatni prostor
