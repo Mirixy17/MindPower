@@ -1,0 +1,30 @@
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string Kuss = "Ich_gebe_Lukic_einen_Kuss";
+
+	for (int i = 0; i <= Kuss.length(); i++)
+	{
+		std::cout << Kuss[i];
+	}
+
+}
+
+
+#include <iostream>
+#include <string>
+
+int main()
+{
+	std::string Kuss = "Ich_gebe_Lukic_einen_Kuss";
+
+	for (int i = 25; i <= Kuss.length(); i--)
+	{
+		std::cout << Kuss[i];
+	}
+
+}
+
