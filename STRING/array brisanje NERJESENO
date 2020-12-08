@@ -1,12 +1,15 @@
-STRING ARRAY BRISANJE ???
+
 #include <iostream>    
 #include <string>
+#include <vector>
 
-	int main() 
+int main()
+{
+	std::vector<std::string> hoteli = { "Moguntia", "Advena", "Königshof", "The Niu Mood" };
+	hoteli.resize(hoteli.size() - 1);
+
+	for (int i = 0; i < hoteli.size(); i++)
 	{
-		std::string hoteli[3] = {"Moguntia", "Advena", "Königshof", "The Niu Mood"};
-		std::cout << hoteli.resize(hoteli->size() - 1);
+		std::cout << hoteli[i]<<"\n";
 	}
-
-
-https://www.techiedelight.com/remove-last-character-end-string-cpp/
+}
