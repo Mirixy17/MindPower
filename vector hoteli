@@ -13,3 +13,20 @@ int main()
 		std::cout << hoteli[i]<<"\n";
 	}
 }
+
+
+
+#include <iostream>    
+#include <string>
+#include <vector>
+
+int main()
+{
+	std::vector<std::string> hoteli = { "Moguntia", "Advena", "Königshof", "The Niu Mood" };
+	hoteli.erase(hoteli.begin()+3);
+
+	for (int i = 0; i < hoteli.size(); i++)
+	{
+		std::cout << hoteli[i]<<"\n";
+	}
+}
