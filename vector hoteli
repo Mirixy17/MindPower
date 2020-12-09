@@ -14,7 +14,20 @@ int main()
 	}
 }
 
+// vektori se ne mogu sami ispisati bez neke petlje, kraca verzija bi bila:
 
+int main()
+{
+	std::vector<std::string> hoteli = { "Moguntia", "Advena", "Königshof", "The Niu Mood" };
+	hoteli.resize(hoteli.size() - 1);
+	for(std::string hotel : hoteli)
+	std::cout << hotel;
+}
+
+
+
+
+BRISANJE UNUTAR VEKTORA
 
 #include <iostream>    
 #include <string>
@@ -28,5 +41,21 @@ int main()
 	for (int i = 0; i < hoteli.size(); i++)
 	{
 		std::cout << hoteli[i]<<"\n";
+	}
+}
+
+
+#include <iostream>    
+#include <string>
+#include <vector>
+
+int main()
+{
+	std::vector<std::string> hoteli = { "Moguntia", "Advena", "Königshof", "The Niu Mood" };
+	hoteli.erase(hoteli.begin() + 2);
+
+	for (std::string hotel : hoteli) // 
+	{
+		std::cout << hotel<< "\n";
 	}
 }
