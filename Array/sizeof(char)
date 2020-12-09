@@ -35,3 +35,18 @@ int main()
 		std::cout <<sizeof(cars);
 	}
 }
+
+
+puno bolja opcija, ispisuje samo jednom
+
+#include <iostream> 
+#include <string>
+#include <vector>
+int main()
+{
+	std::vector<std::string> cars = { "Volvo", "BMW", "Ford", "Mazda" };
+
+	{
+		std::cout << sizeof(cars);
+	}
+}
