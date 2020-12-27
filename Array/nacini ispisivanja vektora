@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <math.h>
+
+void main()
+{
+	std::vector<int> brojevi = { 1,2,3,4,5 };
+
+	for (int& broj : brojevi)
+	{
+		std::cout << broj << "\n";
+	}
+
+	std::cout << "\n";
+
+	for (int i = 0; i < brojevi.size(); i++)
+	{
+		std::cout << brojevi[i] << "\n";
+	}
+
+	std::cout << "\n";
+
+	for (std::vector<int>::iterator iterator = brojevi.begin(); iterator < brojevi.end(); iterator++)
+	{
+		std::cout << *iterator << "\n";
+	}
+
+	std::cout << "\n";
+
+	for (int* iterator = &brojevi[0]; iterator <= &brojevi[brojevi.size()-1]; iterator++)
+	{
+		std::cout << *iterator << "\n";
+	}
+
+}
