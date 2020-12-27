@@ -1,0 +1,24 @@
+#include <iostream>
+#include <string>
+#include <vector>
+#include <iostream>
+#include <math.h>
+
+void main()
+{
+	std::vector<int> brojevi = { 1,2,3,4,5 };
+	int i = 0;
+	for (;;)
+	{
+		
+		if (i < brojevi.size())
+		{
+			std::cout << brojevi[i] << "\n";
+		}
+		else
+		{
+			break;
+		}
+		i++;
+	}
+}
