@@ -1,0 +1,260 @@
+#include <iostream>
+#include <vector>
+#include <windows.h>  
+#include <math.h>
+
+
+class Deklinacija
+{
+public:
+	std::string nominativ;
+	std::string genitiv;
+	std::string dativ;
+	std::string akkusativ;
+
+};
+
+class Lice
+{
+public:
+
+	Deklinacija Person1Sg;
+	Deklinacija Person2Sg;
+	Deklinacija Person3Sg;
+	Deklinacija Person3SgW;
+	Deklinacija Person3SgN;
+	Deklinacija Person1Pl;
+	Deklinacija Person2Pl;
+	Deklinacija Person3Pl;
+};
+
+
+class PronomenimDeutschen
+{
+public:
+	std::string m_name;
+	Lice m_person;
+	std::string m_übersetzung;
+
+	void IspisOsobne()
+	{
+	//	std::cout << ;
+	}
+	void IspisPovratne()
+	{
+	//	std::cout << ;
+	}
+};
+void main()
+{
+	std::vector<PronomenimDeutschen> pronomen;
+
+	PronomenimDeutschen personalpronomen1PersonSg;
+
+	//personalpronomen1PersonSg.m_name = "Ich""\n";
+	//personalpronomen1PersonSg.m_kasus.nominativ = "Ich""\n";
+	//personalpronomen1PersonSg.m_kasus.genitiv = "meiner""\n";
+	//personalpronomen1PersonSg.m_kasus.dativ = "mir""\n";
+	//personalpronomen1PersonSg.m_kasus.akkusativ = "mich""\n";
+	//personalpronomen1PersonSg.m_übersetzung = "(tko ili sto?): ja, (koga ili cega?) mene (me), (komu ili cemu?) meni (mi), (koga ili sto?) mene (me)""\n";
+	//pronomen.push_back(personalpronomen1PersonSg);
+	//
+	//
+	//PronomenimDeutschen personalpronomen2PersonSg;
+	//
+	//personalpronomen2PersonSg.m_name = "Du""\n";
+	//personalpronomen2PersonSg.m_kasus.nominativ = "Du""\n";
+	//personalpronomen2PersonSg.m_kasus.genitiv = "deiner""\n";
+	//personalpronomen2PersonSg.m_kasus.dativ = "dir""\n";
+	//personalpronomen2PersonSg.m_kasus.akkusativ = "dich""\n";
+	//personalpronomen2PersonSg.m_übersetzung = "(tko ili sto?) ti, (koga ili cega?) tebe (te), (komu ili cemu?) tebi (ti), (koga ili sto?) tebe (te)""\n";
+	//pronomen.push_back(personalpronomen2PersonSg);
+	//
+	//
+	//PronomenimDeutschen personalpronomen3PersonSgM;
+	//
+	//personalpronomen3PersonSgM.m_name = "Er""\n";
+	//personalpronomen3PersonSgM.m_kasus.nominativ = "Er""\n";
+	//personalpronomen3PersonSgM.m_kasus.genitiv = "seiner""\n";
+	//personalpronomen3PersonSgM.m_kasus.dativ = "ihm""\n";
+	//personalpronomen3PersonSgM.m_kasus.akkusativ = "ihn""\n";
+	//personalpronomen3PersonSgM.m_übersetzung = "(tko ili sto?) on, (koga ili cega?) njega (ga), (komu ili cemu?) njemu (mu), (koga ili sto?) njega (ga, nj)""\n";
+	//pronomen.push_back(personalpronomen3PersonSgM);
+	//
+	//
+	//PronomenimDeutschen personalpronomen3PersonSgW;
+	//
+	//personalpronomen3PersonSgW.m_name = "Sie""\n";
+	//personalpronomen3PersonSgW.m_kasus.nominativ = "Sie""\n";
+	//personalpronomen3PersonSgW.m_kasus.genitiv = "ihrer""\n";
+	//personalpronomen3PersonSgW.m_kasus.dativ = "ihr""\n";
+	//personalpronomen3PersonSgW.m_kasus.akkusativ = "sie""\n";
+	//personalpronomen3PersonSgW.m_übersetzung = "(tko ili sto?) ona, (koga ili cega?) nje (je), (komu ili cemu?) njoj (joj), (koga ili sto?) nju (ju, je)""\n";
+	//pronomen.push_back(personalpronomen3PersonSgW);
+	//
+	//
+	//PronomenimDeutschen personalpronomen3PersonSgN;
+	//
+	//personalpronomen3PersonSgN.m_name = "Es""\n";
+	//personalpronomen3PersonSgN.m_kasus.nominativ = "Er""\n";
+	//personalpronomen3PersonSgN.m_kasus.genitiv = "seiner""\n";
+	//personalpronomen3PersonSgN.m_kasus.dativ = "ihm""\n";
+	//personalpronomen3PersonSgN.m_kasus.akkusativ = "es""\n";
+	//personalpronomen3PersonSgN.m_übersetzung = "(tko ili sto?) ono, (koga ili cega?) njega (ga), (komu ili cemu?) njemu (mu), (koga ili sto?) njega (ga, nj)""\n";
+	//pronomen.push_back(personalpronomen3PersonSgN);
+	//
+	//
+	//PronomenimDeutschen personalpronomen1PersonPl;
+	//
+	//personalpronomen1PersonPl.m_name = "Wir""\n";
+	//personalpronomen1PersonPl.m_kasus.nominativ = "Wir""\n";
+	//personalpronomen1PersonPl.m_kasus.genitiv = "unser""\n";
+	//personalpronomen1PersonPl.m_kasus.dativ = "uns""\n";
+	//personalpronomen1PersonPl.m_kasus.akkusativ = "uns""\n";
+	//personalpronomen1PersonPl.m_übersetzung = "(tko ili sto?) mi, (koga ili cega?) nas, (komu ili cemu?) nama (nam), (koga ili sto?) nas""\n";
+	//pronomen.push_back(personalpronomen1PersonPl);
+	//
+	//
+	//PronomenimDeutschen personalpronomen2PersonPl;
+	//
+	//personalpronomen2PersonPl.m_name = "Ihr""\n";
+	//personalpronomen2PersonPl.m_kasus.nominativ = "Ihr""\n";
+	//personalpronomen2PersonPl.m_kasus.genitiv = "euer""\n";
+	//personalpronomen2PersonPl.m_kasus.dativ = "euch""\n";
+	//personalpronomen2PersonPl.m_kasus.akkusativ = "uns""\n";
+	//personalpronomen2PersonPl.m_übersetzung = "(tko ili sto?) vi, (koga ili cega?) vas, (komu ili cemu?) vama (vam), (koga ili sto?) vas""\n";
+	//pronomen.push_back(personalpronomen2PersonPl);
+	//
+	//
+	//PronomenimDeutschen personalpronomen3PersonPl;
+	//
+	//personalpronomen3PersonPl.m_name = "Sie""\n";
+	//personalpronomen3PersonPl.m_kasus.nominativ = "Sie""\n";
+	//personalpronomen3PersonPl.m_kasus.genitiv = "ihrer""\n";
+	//personalpronomen3PersonPl.m_kasus.dativ = "ihnen""\n";
+	//personalpronomen3PersonPl.m_kasus.akkusativ = "sie""\n";
+	//personalpronomen3PersonPl.m_übersetzung = " (tko ili sto?) oni, (koga ili cega?) njih (ih), (komu ili cemu?) njima (im), (koga ili sto?) njih (ih)""\n";
+	//pronomen.push_back(personalpronomen3PersonPl);
+	//
+	//
+	//
+	//for (PronomenimDeutschen OsobneZamjeniceuNjemackom : pronomen) // prodje kroz sve el pronomena (pronomen) i stavi ih u zamjenice u njemackom, da bi mogao ispisati tip podatka vektor PronomenimDeutschen (tip podatka)
+	//{
+	//
+	//	std::cout << "Pronomen: " << OsobneZamjeniceuNjemackom.m_name;
+	//	std::cout << "Nominativ (Wer oder Was?): " << OsobneZamjeniceuNjemackom.m_kasus.nominativ;
+	//	std::cout << "Genitiv (Wessen?): " << OsobneZamjeniceuNjemackom.m_kasus.genitiv;
+	//	std::cout << "Dativ (Wem?): " << OsobneZamjeniceuNjemackom.m_kasus.dativ;
+	//	std::cout << "Akkusativ (Wen oder Was?): " << OsobneZamjeniceuNjemackom.m_kasus.akkusativ;
+	//	std::cout << "Uebersetzung: " << OsobneZamjeniceuNjemackom.m_übersetzung << "\n";
+	//
+	//}
+	//
+	//PronomenimDeutschen Reflexivpronomen1PersonSg;
+	//Reflexivpronomen1PersonSg.m_kasus.dativ = "Mir";
+	//Reflexivpronomen1PersonSg.m_kasus.akkusativ = "Mich";
+	//Reflexivpronomen1PersonSg.m_übersetzung = "";
+	//pronomen.push_back(Reflexivpronomen1PersonSg);
+	//
+	//PronomenimDeutschen Reflexivpronomen2PersonSg;
+	//Reflexivpronomen2PersonSg.m_kasus.dativ = "Dir";
+	//Reflexivpronomen2PersonSg.m_kasus.akkusativ = "Dich";
+	//Reflexivpronomen2PersonSg.m_übersetzung = "";
+	//pronomen.push_back(Reflexivpronomen2PersonSg);
+	//
+	//PronomenimDeutschen Reflexivpronomen3PersonSg;
+	//Reflexivpronomen3PersonSg.m_kasus.dativ = "Sich";
+	//Reflexivpronomen3PersonSg.m_kasus.akkusativ = "Sich";
+	//Reflexivpronomen3PersonSg.m_übersetzung = "";
+	//pronomen.push_back(Reflexivpronomen3PersonSg);
+	//
+	//PronomenimDeutschen Reflexivpronomen1PersonPl;
+	//Reflexivpronomen1PersonPl.m_kasus.dativ = "Uns";
+	//Reflexivpronomen1PersonPl.m_kasus.akkusativ = "Uns";
+	//Reflexivpronomen1PersonPl.m_übersetzung = "";
+	//pronomen.push_back(Reflexivpronomen1PersonPl);
+	//
+	//PronomenimDeutschen Reflexivpronomen2PersonPl;
+	//Reflexivpronomen2PersonPl.m_kasus.dativ = "Euch";
+	//Reflexivpronomen2PersonPl.m_kasus.akkusativ = "Euch";
+	//Reflexivpronomen2PersonPl.m_übersetzung = "";
+	//pronomen.push_back(Reflexivpronomen2PersonPl);
+
+PronomenimDeutschen Reflexivpronomen;
+
+	Reflexivpronomen.m_person.Person1Pl = "Wir";
+	Reflexivpronomen.m_person.Person1Pl.dativ = "Uns";
+	Reflexivpronomen.m_person.Person1Pl.akkusativ = "Uns";
+
+	Reflexivpronomen.m_person.Person3Pl = "Sich";
+	Reflexivpronomen.m_person.Person3Pl.dativ = "Sich";
+	Reflexivpronomen.m_person.Person3Pl.akkusativ = "Sich";
+
+
+	Reflexivpronomen.m_person.Person2Pl = "Euch";
+	Reflexivpronomen.m_kasus.dativ = "Euch";
+	Reflexivpronomen.m_kasus.akkusativ = "Euch";
+
+
+	Reflexivpronomen.m_übersetzung = "";
+	pronomen.push_back(Reflexivpronomen);
+
+
+	for (int i = 0; i < 1; i++)
+	{
+		std::cout << "ReflexivPronomen 1 Person Pl.: " << Reflexivpronomen.m_name << "\n";
+		std::cout << "im Dativ (Wen oder Was?): " << Reflexivpronomen.m_person.Person1Pl.dativ << "\n";
+		std::cout << "im Akkusativ (Wen oder Was?): " << Reflexivpronomen.m_person.Person1Pl.akkusativ << "\n";
+
+		std::cout << "ReflexivPronomen 2 Person Pl.: " << Reflexivpronomen.m_person.Person2Pl. << "\n";
+		std::cout << "im Dativ (Wen oder Was?): " << Reflexivpronomen.m_person.Person2Pl.dativ << "\n";
+		std::cout << "im Akkusativ (Wen oder Was?): " << Reflexivpronomen.m_person.Person2Pl.akkusativ << "\n";
+
+		std::cout << "ReflexivPronomen 3 Person Pl.: " << Reflexivpronomen.m_person.Person3Pl << "\n";
+		std::cout << "im Dativ (Wen oder Was?): " << Reflexivpronomen.m_person.Person2Pl.dativ << "\n";
+		std::cout << "im Akkusativ (Wen oder Was?): " << Reflexivpronomen.m_person.Person2Pl.akkusativ << "\n";
+
+		//IspisPovratne()
+
+		//std::cout << "ReflexivPronomen 1 Person Sg. im Dativ (Wem?): " << Reflexivpronomen1PersonSg.m_kasus.dativ << "\n";
+		//std::cout << "ReflexivPronomen 1 Person Sg. im Akkusativ (Wen oder Was?): " << Reflexivpronomen1PersonSg.m_kasus.akkusativ << "\n";
+		//std::cout << "ReflexivPronomen 2 Person Sg. im Dativ (Wem?): " << Reflexivpronomen2PersonSg.m_kasus.dativ << "\n";
+		//std::cout << "ReflexivPronomen 2 Person Sg. im Akkusativ (Wen oder Was?): " << Reflexivpronomen2PersonSg.m_kasus.akkusativ << "\n";
+		//std::cout << "ReflexivPronomen 3 Person Sg. im Dativ (Wen oder Was?): " << Reflexivpronomen3PersonSg.m_kasus.dativ << "\n";
+		//std::cout << "ReflexivPronomen 3 Person Sg. im Akkusativ (Wen oder Was?): " << Reflexivpronomen3PersonSg.m_kasus.akkusativ << "\n";
+		//std::cout << "ReflexivPronomen 1 Person Pl. im Dativ (Wen oder Was?): " << Reflexivpronomen1PersonPl.m_kasus.dativ << "\n";
+		//std::cout << "ReflexivPronomen 1 Person Pl. im Akkusativ (Wen oder Was?): " << Reflexivpronomen1PersonPl.m_kasus.akkusativ << "\n";
+		//std::cout << "ReflexivPronomen 2 Person Pl. im Dativ (Wen oder Was?): " << Reflexivpronomen2PersonPl.m_kasus.dativ << "\n";
+		//std::cout << "ReflexivPronomen 2 Person Pl. im Akkusativ (Wen oder Was?): " << Reflexivpronomen2PersonPl.m_kasus.akkusativ << "\n";
+		//std::cout << "ReflexivPronomen 3 Person Pl. im Dativ (Wen oder Was?): " << Reflexivpronomen3PersonPl.m_kasus.dativ << "\n";
+		//std::cout << "ReflexivPronomen 3 Person Pl. im Akkusativ (Wen oder Was?): " << Reflexivpronomen3PersonPl.m_kasus.akkusativ << "\n";
+		//
+	}
+
+
+		PronomenimDeutschen Possessivpronomen;
+		Possessivpronomen.m_person.Person1Sg = "Mein";
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person2Sg = "Dein";
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person3Sg = "Sein"; 
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person3SgW = "Ihr"; 
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person3SgN = "Sein"; 
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person1Pl = "Unser"; 
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person2Pl = "Euer"; 
+		Possessivpronomen.m_übersetzung = "";
+		Possessivpronomen.m_person.Person3Pl = "Ihr"; 
+
+		pronomen.push_back(Possessivpronomen);
+}
+
+
+// Demonstrativpronomen;
+// Indefinitpronomen;
+// Possessivpronomen;
+// ;
+// Relativpronomen;
