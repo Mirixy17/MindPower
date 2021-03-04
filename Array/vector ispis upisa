@@ -1,0 +1,15 @@
+#include <iostream>
+#include <vector>
+#include <algorithm>
+#include <string>
+
+int main()
+{
+	std::vector <double> lista;
+	double upis;
+	while(std::cin>> upis)
+	{ 
+		lista.push_back(upis);
+		std::cout << upis;
+	}
+}
