@@ -14,11 +14,13 @@ Primjeti da program ispisuje
 i tako u beskonacnost.
 
 Tvoj zadatak je promijenis kod tako da dobijes ovaj ispis
-*____
-_*___
-__*__
-___*_
-____*
+
+    *____
+    _*___
+    __*__
+    ___*_
+    ____*
+
 Ako uspijes to napraviti, program ce ti ispisati da si uspjesno obavila zadatak
 
 PS. ako zapnes postoji rjesenje u RijeseniZadatak.cpp
