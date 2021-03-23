@@ -1,1 +1,55 @@
+#include <iostream>
+#include <vector>
+#include <unistd.h>
+
+void Pauza(int brojMilisekundi)
+{
+        Pauza(brojMilisekundi);
+}
+
+void IspuniVektor(std::vector<char>& polje)
+{
+        polje.resize(5);
+        polje[0] = '*';
+        for (int i = 1; i < 5; i++)
+        {
+                polje[i] = '_';
+        }
+}
+
+void Ispisi(std::vector<char>& polje)
+{
+        for (int i = 0; i < polje.size(); i++)
+        {
+                std::cout << polje[i];
+        }
+        std::cout << '\n';
+}
+
+void PomakniZvjezdicu(std::vector<char>& polje)
+{
+        while (polje[polje.size() - 1] != '*')
+        {
+                Ispisi(polje);
+                for (int i = polje.size() - 1; i >= 0; i--)
+                {
+                        if (polje[i] == '*')
+                        {
+                                char temp = polje[i+1];
+                                polje[i+1] = polje[i];
+                                polje[i] = temp;
+                        }
+                }
+                Pauza(1000);
+        }
+        Ispisi(polje);
+        std::cout << "Uspjesno si rijesila zadatak!! Bravo \n";
+}
+
+int main()
+{
+        std::vector<char> red;
+        IspuniVektor(red);
+        PomakniZvjezdicu(red);
+}
 
